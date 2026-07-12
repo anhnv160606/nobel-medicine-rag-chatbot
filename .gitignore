@@ -1,0 +1,19 @@
+# Secrets
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Vector DB / generated data
+data/processed/*.index
+chroma_db/
+
+# OS
+.DS_Store
+
+data/raw/*.json
+data/raw/*.pdf
