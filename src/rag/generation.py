@@ -4,11 +4,13 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 import os
 
-def generate_answer(retriever):
+def generate_answer(retriever, question: str):
     
-    api_key = os.getenv("GEMINI_API_KEY")
+    api_key = os.getenv("GOOGLE_API_KEY")
+    
     if not api_key:
-        print("⚠️ WARNING: GEMINI_API_KEY is missing from environment. Loading manually...")
+        print("⚠️ WARNING: GOOGLE_API_KEY is missing from environment. Loading manually...")
+    
     template = (
     "You are an expert AI archivist specialized in the Nobel Prizes in Physiology or Medicine.\n"
     "Your job is to answer user queries accurately using ONLY the provided verified context blocks.\n\n"
@@ -50,7 +52,6 @@ def generate_answer(retriever):
         | llm
         | StrOutputParser()
     )
-    question = input("I want to ask: ")
     answer = rag_chain.invoke({"question": question})
     return answer
 

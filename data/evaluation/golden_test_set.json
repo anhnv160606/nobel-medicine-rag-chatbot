@@ -1,0 +1,360 @@
+[
+  {
+    "id": "case_001",
+    "question": "Who won the Nobel Prize in Medicine in 2023 and what technology was it for?",
+    "ground_truth": "Katalin Karikó and Drew Weissman won the 2023 Nobel Prize in Physiology or Medicine for their discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 2023,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_002",
+    "question": "What specific discovery did Svante Pääbo make regarding the genome of extinct hominins?",
+    "ground_truth": "Sequencing the genome of the Neanderthal, an extinct relative of present-day humans. He also made the sensational discovery of a previously unknown hominin, Denisova. Importantly, Pääbo also found that gene transfer had occurred from these now extinct hominins to Homo sapiens following the migration out of Africa around 70,000 years ago. This ancient flow of genes to present-day humans has physiological relevance today, for example affecting how our immune system reacts to infections.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 2022,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_003",
+    "question": "What is the definition of immune system?",
+    "ground_truth": "The immune system is a marvel of intricate checks and balances, enabling robust defences against infections while, in most cases, avoiding destructive responses against the body's own tissues.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 2025,
+      "doc_type": "nobel_lecture"
+    }
+  },
+
+  {
+    "id": "case_004",
+    "question": "Explain the two-step chain of discovery that connected FOXP3 to regulatory T cells, and why neither the CD4+CD25+ finding alone nor the FOXP3 finding alone was sufficient to establish Treg cells as a defined lineage. Include the specific experiment that formally proved causality for each piece.",
+    "ground_truth": "The connection required two independent breakthroughs made a decade apart, which only became a unified concept once they were experimentally linked.\n\nBreakthrough 1 (1995) — Sakaguchi identifies a candidate suppressive cell surface marker, but not a molecular mechanism.\n\nSakaguchi and co-workers showed that CD4+ T cells expressing CD25 (the IL-2 receptor alpha chain) had regulatory function. When mice were injected with CD4+ T cells depleted of CD25+ cells, they developed multi-organ autoimmune disease (thyroiditis, gastritis, insulitis, adrenalitis, polyarthritis); re-adding CD4+CD25+ cells prevented this. However, CD25 was not a reliable marker on its own—it is also expressed, at lower levels, on conventional activated effector T cells, which limited its specificity for identifying a distinct regulatory lineage.\n\nBreakthrough 2 (2001) — Brunkow and Ramsdell identify a causative gene, but initially unconnected to CD25+ Tregs.\n\nWorking independently on the \"scurfy\" mouse (a spontaneous X-linked mutant from 1940s radiation studies at Oak Ridge that develops fatal autoimmunity), Brunkow and Ramsdell used positional cloning to narrow the mutation to a 500,000-base region, sequenced approximately 20 candidate genes, and found a two-base-pair insertion causing a frameshift and premature stop codon in a previously undescribed gene, which they named Foxp3. Critically, they did not just find the mutation—they proved causality by generating five transgenic mouse lines carrying wild-type Foxp3 at different copy numbers and crossing each with scurfy mice; wild-type Foxp3 rescued male scurfy mice from disease. They also showed the human ortholog, FOXP3, was mutated in IPEX syndrome, the human disease equivalent of scurfy.\n\nThe link (2003) — Sakaguchi's team closes the loop.\n\nNeither discovery alone established Treg cells as a lineage: CD25 was too promiscuous a marker, and Foxp3 was known only as a disease gene, not yet tied to a specific cell type. Sakaguchi's group (Hori, Nomura, and Sakaguchi, 2003) demonstrated that Foxp3 was selectively expressed in CD4+CD25+ T cells and, in the decisive experiment, that retroviral transfer of Foxp3 into conventional CD4+ T cells converted them into functional Treg cells. Ramsdell's group and Rudensky's group independently confirmed this around the same time, showing Treg cells were absent in scurfy mice and that Foxp3-deficient mice phenocopied the scurfy autoimmune disease. Only this convergence—a cell surface marker (CD25), a causative transcription factor (FOXP3), and proof that the factor programs the cell's identity—established Tregs as a defined, molecularly identifiable lineage.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 2025,
+      "doc_type": "nobel_lecture"
+    }
+  },
+
+  {
+    "id": "case_005",
+    "question": "Explain how Hubel and Wiesel's hierarchical model of simple, complex, and hypercomplex cells relates to their concept of the 'hypercolumn.' Specifically: what two independent functional maps combine within a hypercolumn, what is the physical size of a hypercolumn, and why did the authors describe cortical uniformity as advantageous for genetic development?",
+    "ground_truth": "The hierarchical cell model:\n\nHubel and Wiesel described a three-stage hierarchy of increasing complexity in the visual cortex. Simple cells have receptive fields subdivided into antagonistic excitatory/inhibitory regions separated by straight parallel lines, giving them a specific optimal orientation and requiring a precisely positioned stimulus (e.g., a stationary slit). Complex cells cannot be derived in a single logical step from geniculate input; they respond to a properly oriented line anywhere within the receptive field (not a fixed position) and are best explained as pooling input from many simple cells sharing the same orientation but slightly different positions. Hypercomplex cells (later termed \"end-stopped\") add a further constraint: response falls off if the line is extended beyond an optimal length in one or both directions—\"end stopping.\" These were first found in cat areas 18/19 and only later in area 17.\n\nThe hypercolumn concept—combining two independent maps:\n\nA hypercolumn combines two separate, independently discovered columnar systems within roughly the same 1–2 mm² block of cortex.\n\nOrientation columns: Cells with the same receptive-field orientation are grouped into columns running perpendicular to the cortical layers. As an electrode penetrates tangentially, orientation shifts progress in small, orderly steps (approximately 10° per 50 μm), and a complete rotation through 180–360° of orientation occurs over roughly a 1–2 mm traverse. This \"full set\" of orientation columns is termed a hypercolumn for orientation.\n\nOcular dominance columns: Alternating stripes (approximately 0.5 mm wide) of cortex dominated by input from one eye or the other, arising because geniculate afferents (monocular) segregate by eye of origin in layer IVc, and layers above and below mix incompletely. Eye preference alternates roughly every 0.5 mm, so a pair of ocular dominance columns (left + right) constitutes a \"hypercolumn\" for ocular dominance.\n\nPhysical size:\n\nBoth systems operate at a similar spatial scale. A movement of about 2 mm across the cortex is sufficient to (a) shift receptive-field position in the visual field into an entirely new, non-overlapping region (matching the aggregate receptive field size), and (b) complete one full cycle of orientation columns (180–360° shift) and cycle through both ocular dominance columns. Thus, a hypercolumn occupies roughly 1–2 mm² of cortical surface—a block containing, according to Hubel, \"all the machinery necessary to look after everything the visual cortex is responsible for\" for one small part of the visual field.\n\nWhy uniformity aids genetic development:\n\nHubel explicitly states that because the machinery (the combination of orientation columns and ocular dominance columns) is essentially the same everywhere in the cortex—differing only in how much visual field area each hypercolumn covers (finer near the fovea, coarser in the periphery, due to cortical magnification)—genetic specification only needs to encode instructions for a single 1–2 mm block of neural tissue, plus an instruction to replicate that block roughly a thousand times across the cortex. This avoids the need for the genome to separately specify unique wiring for every region of visual cortex, which would be a vastly larger information burden.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 1981,
+      "doc_type": "nobel_lecture"
+    }
+  },
+
+  {
+    "id": "case_006",
+    "question": "Trace the logical chain of evidence that established the negative-autoregulatory-feedback model of the Transcription-Translation Feedback Loop (TTFL), from the initial observation of PER protein cycling through to the closing of the loop with CLOCK and CYCLE. At each step, specify what alternative model(s) it ruled out or what gap it closed, and explain the significance of the time delay between period mRNA and PER protein peaks.",
+    "ground_truth": "Step 1 — Two competing non-transcriptional models existed before the mechanism was known:\n\nAfter period was cloned (mid-1980s) but its sequence alone gave no clue to function, two speculative models were proposed: a \"membrane gradient\" model (PER as a pump building a gradient dissipated through light-sensitive channels) and a gap-junction model (PER as a proteoglycan linking cells via intercellular connections). Neither involved transcriptional feedback.\n\nStep 2 — PER protein cycling is discovered (rules out nothing yet, but establishes the first empirical anchor):\n\nUsing newly available PER antibodies, the Hall and Rosbash labs showed PER protein abundance cycles with a 24-hour period in fly brain neurons, peaking at night (Siwicki et al. 1988).\n\nStep 3 — mRNA cycling is discovered, and its timing relative to protein is the critical clue:\n\nperiod mRNA was also found to cycle with 24-hour periodicity, but critically, mRNA levels peaked several hours before the peak in PER protein (Hardin et al. 1990). This phase lag is the key piece of reasoning: if PER were merely a structural or mechanical element (a pump or gap-junction protein), there would be no obvious reason for its mRNA to systematically precede its own protein by a fixed delay tied to a repressive function. Instead, this pattern is exactly what one would expect if the accumulating protein feeds back to shut off its own transcription, establishing a temporal signature consistent with negative autoregulation rather than the membrane or gap-junction models.\n\nStep 4 — Genetic proof of causality (moves from correlation to mechanism):\n\nA nonsense mutant of period could not generate oscillating mRNA levels at all, but reintroducing wild-type PER protein rescued cyclic mRNA expression. This is the decisive experiment: it demonstrates that PER protein itself is necessary to drive the oscillation of its own gene's transcript, directly supporting the negative autoregulatory feedback model in which PER protein accumulation attenuates period mRNA expression (Hardin et al. 1990).\n\nStep 5 — Nuclear localization confirms PER can plausibly act on transcription:\n\nPER was subsequently shown to be a nuclear protein that shuttles between the nucleus and cytoplasm in a temporally regulated manner (Liu et al. 1992), a physical prerequisite for it to function as a transcriptional regulator, further supporting (though not yet proving) a transcriptional mechanism over a membrane-based one.\n\nStep 6 — Discovery of TIM closes a logical gap: why does PER need a partner?\n\nA separate forward genetic screen by Young identified timeless (Myers et al. 1995; Sehgal et al. 1995). TIM mRNA also cycled with a 24-hour periodicity, and TIM was shown to bind PER directly, affecting PER's nuclear localization and blocking its degradation. Critically, the cycle of period expression was abolished in timeless mutants, and vice versa, showing that PER alone was insufficient; nuclear entry and stability required its dimerization partner TIM. This consolidated the basic transcription-translation feedback loop (TTFL) framework.\n\nStep 7 — CLOCK and CYCLE close the loop by identifying the activators being repressed:\n\nThe mechanism so far explained repression but not what was being repressed—that is, what activates period and timeless transcription in the first place. This gap was resolved by the discovery of clock (first identified in mouse by Takahashi) and cycle (Allada et al. 1998; Rutila et al. 1998). CLK and CYC heterodimerize via bHLH motifs and bind regulatory elements in period and timeless to positively drive their transcription. Later work showed that TIM and PER negatively regulate CLK activity, formally closing the feedback loop (Darlington et al. 1998): CLK/CYC activate period and timeless transcription; PER and TIM proteins accumulate, dimerize, and enter the nucleus; PER/TIM inhibit CLK/CYC; transcription shuts off; PER/TIM are degraded (via DBT phosphorylation); and CLK/CYC reactivate the next cycle.\n\nSignificance of the mRNA-to-protein delay:\n\nBecause transcription and translation are inherently fast biochemical processes, a simple feedback loop without a built-in delay would oscillate far faster than 24 hours. The mRNA-to-protein phase lag, later shown to be substantially mediated by DOUBLETIME (DBT)-driven phosphorylation and degradation of PER, imposes the necessary delay to stretch the oscillation to a true circadian (~24-hour) period rather than a rapid, biologically implausible cycle. This is why the discovery of doubletime (Price et al. 1998) was highlighted as a key mechanistic advance: it explained how the loop's timing, not just its existence, was controlled.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 2017,
+      "doc_type": "nobel_lecture"
+    }
+  },
+
+  {
+    "id": "case_007",
+    "question": "Who won the Nobel Prize in Physics for discovering black holes?",
+    "ground_truth": "Sorry, I can't answer your question. I am custom-tuned to only answer questions within the scope of this medical archive.",
+    "category": "out_of_scope"
+  },
+
+  {
+    "id": "case_008",
+    "question": "Who was the first Nobel laureate in Physiology or Medicine and what was the prize awarded for?",
+    "ground_truth": "Emil Adolf von Behring was the first Nobel laureate in Physiology or Medicine, winning the prize in 1901 for his work on serum therapy, especially its application against diphtheria, by which he opened a new road in the domain of medical science and thereby placed in the hands of the physician a victorious weapon against illness and deaths.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 1901,
+      "doc_type": "metadata"
+    }
+  },
+
+  {
+    "id": "case_009",
+    "question": "What did Alexander Fleming, Ernst Boris Chain, and Howard Walter Florey jointly win the Nobel Prize for in 1945?",
+    "ground_truth": "Sir Alexander Fleming, Ernst Boris Chain, and Sir Howard Walter Florey were jointly awarded the 1945 Nobel Prize in Physiology or Medicine for the discovery of penicillin and its curative effect in various infectious diseases.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 1945,
+      "doc_type": "metadata"
+    }
+  },
+
+  {
+    "id": "case_010",
+    "question": "What did Karl Landsteiner discover that won him the 1930 Nobel Prize?",
+    "ground_truth": "Karl Landsteiner won the 1930 Nobel Prize in Physiology or Medicine for his discovery of human blood groups.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 1930,
+      "doc_type": "metadata"
+    }
+  },
+
+  {
+    "id": "case_011",
+    "question": "What organism did Sydney Brenner, H. Robert Horvitz, and John E. Sulston use as a model system, and what did their Nobel Prize-winning research reveal about it?",
+    "ground_truth": "They used the nematode Caenorhabditis elegans (C. elegans) as an experimental model system. Their Nobel Prize-winning research (2002) revealed the genetic regulation of organ development and programmed cell death. Brenner established C. elegans as a novel model organism and showed that specific gene mutations could be induced using EMS (ethyl methane sulphonate). Sulston mapped the complete cell lineage showing that all 1090 cells generated during development undergo an invariant program of cell division, with precisely 131 cells eliminated by programmed cell death, resulting in an adult with 959 somatic cells. Horvitz identified the first 'death genes' (ced-3 and ced-4) as prerequisites for cell death, showed that ced-9 protects against cell death, and demonstrated that the human genome contains a ced-3-like gene, proving these cell death pathways are evolutionarily conserved.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 2002,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_012",
+    "question": "How does cholera toxin cause the dramatic loss of salt and water, and what role do G-proteins play in this process?",
+    "ground_truth": "Cholera toxin acts as an enzyme that alters one of the G-proteins in such a manner that it is locked in the active form — the traffic light is stuck on green. G-proteins normally shuttle between the hormone receptor and the amplifier system in the cell membrane, being alternatively switched on or off by exchanging GDP for GTP. When cholera toxin locks the G-protein in its active GTP-bound state, the cellular amplifier system remains permanently activated. This prevents salt and water from being normally absorbed from the intestines, and the resulting loss of water and salt can lead to dehydration and death. This was explained by the discoveries of Alfred G. Gilman and Martin Rodbell, who won the 1994 Nobel Prize for their discovery of G-proteins and their role in signal transduction in cells.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 1994,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_013",
+    "question": "What was the significance of Harald zur Hausen's discovery regarding HPV and cervical cancer, and how did it impact medicine?",
+    "ground_truth": "Harald zur Hausen went against current dogma in the 1970s and postulated that oncogenic human papilloma virus (HPV) caused cervical cancer, the second most common cancer among women. He realized that HPV-DNA could exist in a non-productive state in tumours and should be detectable by specific searches for viral DNA. After over 10 years of research, he discovered the new tumourigenic HPV16 type in 1983, and in 1984 cloned HPV16 and 18 from patients with cervical cancer. HPV types 16 and 18 were consistently found in about 70% of cervical cancer biopsies worldwide. Human papilloma virus can be detected in 99.7% of women with histologically confirmed cervical cancer, affecting some 500,000 women per year. His discovery led to characterization of the natural history of HPV infection, an understanding of mechanisms of HPV-induced carcinogenesis, and the development of prophylactic vaccines that provide 95% or greater protection from infection by the high-risk HPV16 and 18 types. He was awarded the 2008 Nobel Prize.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 2008,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_014",
+    "question": "What did James P. Allison and Tasuku Honjo discover about cancer therapy?",
+    "ground_truth": "James P. Allison and Tasuku Honjo were awarded the 2018 Nobel Prize in Physiology or Medicine for their discovery of cancer therapy by inhibition of negative immune regulation. Their work established a fundamentally new principle for cancer treatment by showing that the immune system's own brakes (immune checkpoints) could be released to allow immune cells to attack tumour cells.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 2018,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_015",
+    "question": "How did William C. Campbell and Satoshi Ōmura develop Avermectin, and what parasitic diseases does it treat?",
+    "ground_truth": "Satoshi Ōmura, a Japanese microbiologist expert in isolating natural products, focused on Streptomyces bacteria that live in the soil. He isolated new strains from soil samples, successfully cultured them in the laboratory, and from many thousand different cultures selected about 50 of the most promising. William C. Campbell, an expert in parasite biology in the USA, acquired Ōmura's Streptomyces cultures and showed that a component from one of the cultures was remarkably efficient against parasites in domestic and farm animals. The bioactive agent was purified and named Avermectin, which was subsequently chemically modified to the more effective compound Ivermectin. Ivermectin was later tested in humans and effectively killed parasite larvae (microfilaria). Their discovery led to therapies that have radically lowered the incidence of River Blindness (Onchocerciasis) and Lymphatic Filariasis (Elephantiasis). Treatment is so successful that these diseases are on the verge of eradication. They shared the 2015 Nobel Prize with Tu Youyou, who discovered Artemisinin against Malaria.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 2015,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_016",
+    "question": "What was the key contribution of Françoise Barré-Sinoussi and Luc Montagnier to the understanding of HIV/AIDS?",
+    "ground_truth": "Françoise Barré-Sinoussi and Luc Montagnier discovered human immunodeficiency virus (HIV), sharing the 2008 Nobel Prize. They isolated and cultured lymph node cells from patients with swollen lymph nodes characteristic of early stage acquired immune deficiency. They detected activity of the retroviral enzyme reverse transcriptase, a direct sign of retrovirus replication, and found retroviral particles budding from infected cells. They characterized this retrovirus as the first known human lentivirus based on its morphological, biochemical and immunological properties. Unlike previously characterized human oncogenic retroviruses, HIV did not induce uncontrolled cell growth but instead required cell activation for replication and mediated cell fusion of T lymphocytes, which partly explained how HIV impairs the immune system. By 1984, they had obtained several isolates from sexually infected individuals, haemophiliacs, mother-to-infant transmissions, and transfused patients. Their discovery made rapid cloning of the HIV-1 genome possible, leading to diagnostic methods, blood product screening, and the development of antiviral drugs.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 2008,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_017",
+    "question": "What is the Nobel Prize motivation for Frederick Banting and John Macleod's 1923 award?",
+    "ground_truth": "Frederick Grant Banting and John James Rickard Macleod were awarded the 1923 Nobel Prize in Physiology or Medicine for the discovery of insulin.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 1923,
+      "doc_type": "metadata"
+    }
+  },
+
+  {
+    "id": "case_018",
+    "question": "How did the discovery of restriction enzymes by Werner Arber, Daniel Nathans, and Hamilton Smith revolutionize molecular genetics?",
+    "ground_truth": "Werner Arber, Dan Nathans, and Hamilton Smith were awarded the 1978 Nobel Prize for the discovery of restriction enzymes and their application to problems of molecular genetics. Restriction enzymes provide 'chemical knives' to cut genes (DNA) into defined fragments. Arber discovered restriction enzymes and postulated that they bind to DNA at specific sites containing recurring structural elements made up of specific base-pair sequences. Smith verified Arber's hypothesis with a purified bacterial restriction enzyme from Haemophilus influenzae, showing that the enzyme cuts DNA in the middle of a specific symmetrical sequence of 6 base pairs. Nathans pioneered their application to genetics by demonstrating their use for constructing genetic maps — he constructed the first genetic map of SV40 DNA using restriction fragments. These enzymes can be used to: (1) determine the order of genes on chromosomes, (2) analyse the chemical structure of genes and regulatory regions, and (3) create new combinations of genes. More than 100 restriction enzymes are now known, each recognizing different sequences, providing a battery of tools for DNA analysis.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 1978,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_019",
+    "question": "What principle did Allan M. Cormack and Godfrey N. Hounsfield develop that revolutionized medical diagnostics?",
+    "ground_truth": "Allan M. Cormack and Godfrey N. Hounsfield were awarded the 1979 Nobel Prize for the development of computer assisted tomography (CT). Cormack was the first to theoretically analyze the conditions for demonstrating a correct radiographic cross-section in a biological system, publishing his analysis in 1963 and 1964. Hounsfield made the decisive contributions by constructing the first computed tomography system practicable in medical care, described in his 1968 patent application. The method works by having the X-ray tube sweep in many directions through a cross-section of the body. X-ray film is replaced by sensitive crystal detectors whose signals are analyzed mathematically by a computer, which reconstructs an image with sensitivity more than 100 times greater than X-ray film. The method was particularly revolutionary for diagnosis of brain diseases, allowing direct visualization of the brain and its cavities without invasive contrast procedures, and could distinguish hemorrhages from blood clots, identify tumors, and monitor treatment effects.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 1979,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_020",
+    "question": "What did Shinya Yamanaka discover about mature cells, and how did it change biology?",
+    "ground_truth": "Shinya Yamanaka discovered in 2006 that intact mature cells in mice could be reprogrammed to become immature stem cells. By introducing only four genes together into mature fibroblast cells from connective tissue, he could reprogram them into pluripotent stem cells — immature cells able to develop into all types of cells in the body. These were called induced pluripotent stem cells (iPS cells). He shared the 2012 Nobel Prize with John B. Gurdon, who had shown in 1962 that the specialization of cells is reversible by replacing the cell nucleus in a frog egg with a nucleus from a mature intestinal cell. Yamanaka's discovery completely changed the view that mature cells are permanently confined to their specialized state, led to rewriting of textbooks, and created new opportunities to study diseases and develop methods for diagnosis and therapy by reprogramming human cells.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 2012,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_021",
+    "question": "Which Nobel laureates have made discoveries related to understanding how cells sense and respond to oxygen levels?",
+    "ground_truth": "William G. Kaelin Jr, Sir Peter J. Ratcliffe, and Gregg L. Semenza were awarded the 2019 Nobel Prize in Physiology or Medicine for their discoveries of how cells sense and adapt to oxygen availability. Their work identified molecular machinery that regulates the activity of genes in response to varying levels of oxygen, a fundamental physiological process essential for understanding how cells adapt to changes in oxygen supply.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 2019,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_022",
+    "question": "Summarize the Nobel Prize-winning discoveries related to the immune system and immunology across different years.",
+    "ground_truth": "Multiple Nobel Prizes have been awarded for discoveries related to the immune system:\n\n- 1901: Emil Adolf von Behring — serum therapy, especially its application against diphtheria.\n- 1908: Ilya Ilyich Mechnikov and Paul Ehrlich — in recognition of their work on immunity.\n- 1913: Charles Robert Richet — in recognition of his work on anaphylaxis.\n- 1919: Jules Bordet — for his discoveries relating to immunity.\n- 1960: Sir Frank Macfarlane Burnet and Peter Brian Medawar — for discovery of acquired immunological tolerance.\n- 1980: Baruj Benacerraf, Jean Dausset, and George D. Snell — for their discoveries concerning genetically determined structures on the cell surface that regulate immunological reactions.\n- 1984: Niels K. Jerne, Georges J.F. Köhler, and César Milstein — for theories concerning the specificity in development and control of the immune system and for the discovery of the principle for production of monoclonal antibodies.\n- 1987: Susumu Tonegawa — for his discovery of the genetic principle for generation of antibody diversity.\n- 1996: Peter C. Doherty and Rolf M. Zinkernagel — for their discoveries concerning the specificity of the cell mediated immune defence.\n- 2008: Françoise Barré-Sinoussi and Luc Montagnier — discovery of human immunodeficiency virus (HIV).\n- 2011: Bruce A. Beutler and Jules A. Hoffmann — for their discoveries concerning the activation of innate immunity; Ralph M. Steinman — for his discovery of the dendritic cell and its role in adaptive immunity.\n- 2018: James P. Allison and Tasuku Honjo — cancer therapy by inhibition of negative immune regulation (immune checkpoint therapy).\n- 2025: Mary E. Brunkow, Fred Ramsdell, and Shimon Sakaguchi — for their discoveries concerning peripheral immune tolerance and the identification of regulatory T cells governed by the Foxp3 gene.",
+    "category": "summary",
+    "expected_metadata": {
+      "doc_type": "metadata"
+    }
+  },
+
+  {
+    "id": "case_023",
+    "question": "Which Nobel laureates discovered the Hepatitis C virus, and what was the significance of their work?",
+    "ground_truth": "Harvey J. Alter, Michael Houghton, and Charles M. Rice were awarded the 2020 Nobel Prize for the discovery of Hepatitis C virus. Harvey J. Alter at the US National Institutes of Health demonstrated that a large number of transfusion-related hepatitis cases remained unexplained after testing for Hepatitis A and B, and showed that blood from these patients could transmit the disease to chimpanzees, defining a new form of chronic viral hepatitis known as 'non-A, non-B' hepatitis. Michael Houghton undertook the arduous work to isolate the genetic sequence of the virus by creating a collection of DNA fragments from nucleic acids found in the blood of an infected chimpanzee and identifying fragments derived from the unknown virus. Charles M. Rice provided the final evidence that Hepatitis C virus alone could cause hepatitis. Prior to their work, the majority of blood-borne hepatitis cases remained unexplained. Their discovery made possible blood tests and new medicines that have saved millions of lives. Blood-borne hepatitis causes more than a million deaths per year worldwide.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 2020,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_024",
+    "question": "What did Ivan Petrovich Pavlov win the Nobel Prize for in 1904?",
+    "ground_truth": "Ivan Petrovich Pavlov won the 1904 Nobel Prize in Physiology or Medicine in recognition of his work on the physiology of digestion, through which knowledge on vital aspects of the subject has been transformed and enlarged.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 1904,
+      "doc_type": "metadata"
+    }
+  },
+
+  {
+    "id": "case_025",
+    "question": "How did the discoveries of J. Michael Bishop and Harold E. Varmus change our understanding of cancer?",
+    "ground_truth": "J. Michael Bishop and Harold E. Varmus were awarded the 1989 Nobel Prize for their discovery of the cellular origin of retroviral oncogenes. Using a variant of Rous virus (a retrovirus), they constructed a nucleic acid probe to selectively identify the oncogene and searched for corresponding genetic material in DNA from different cells. They found that oncogene-like material could be detected in different species throughout the animal kingdom, even in simple organisms. The remarkable conclusion was that the oncogene in the virus did not represent a true viral gene but instead was a normal cellular gene, which the virus had acquired during replication in the host cell and thereafter carried along. This cellular gene had a central function controlling cell growth and division. Through studying the abnormal (diseased state), they elucidated critical normal cellular functions. Their discovery led to identification of more than 40 different oncogenes directing different events in the complex signal systems that regulate growth and division of cells, and showed that changes in any one or more of these oncogenes may lead to cancer.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 1989,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_026",
+    "question": "Summarize the Nobel Prize-winning discoveries related to genetics and DNA across the history of the prize.",
+    "ground_truth": "Several Nobel Prizes in Physiology or Medicine have been awarded for breakthroughs in genetics and DNA:\n\n- 1933: Thomas Hunt Morgan — for his discoveries concerning the role played by the chromosome in heredity.\n- 1946: Hermann Joseph Muller — for the discovery of the production of mutations by means of X-ray irradiation.\n- 1958: George Wells Beadle and Edward Lawrie Tatum — for their discovery that genes act by regulating definite chemical events; Joshua Lederberg — for discoveries concerning genetic recombination and the organization of the genetic material of bacteria.\n- 1959: Severo Ochoa and Arthur Kornberg — for their discovery of the mechanisms in the biological synthesis of ribonucleic acid and deoxyribonucleic acid.\n- 1962: Francis Harry Compton Crick, James Dewey Watson, and Maurice Hugh Frederick Wilkins — for their discoveries concerning the molecular structure of nucleic acids and its significance for information transfer in living material.\n- 1965: François Jacob, André Lwoff, and Jacques Monod — for their discoveries concerning genetic control of enzyme and virus synthesis.\n- 1968: Robert W. Holley, Har Gobind Khorana, and Marshall W. Nirenberg — for their interpretation of the genetic code and its function in protein synthesis.\n- 1978: Werner Arber, Daniel Nathans, and Hamilton O. Smith — for the discovery of restriction enzymes and their application to problems of molecular genetics.\n- 1993: Richard J. Roberts and Phillip A. Sharp — for their discoveries of split genes.\n- 2006: Andrew Z. Fire and Craig C. Mello — for their discovery of RNA interference (gene silencing by double-stranded RNA).\n- 2024: Victor Ambros and Gary Ruvkun — for the discovery of microRNA and its role in post-transcriptional gene regulation.",
+    "category": "summary",
+    "expected_metadata": {
+      "doc_type": "metadata"
+    }
+  },
+
+  {
+    "id": "case_027",
+    "question": "What did Robert Koch win the Nobel Prize for and in what year?",
+    "ground_truth": "Robert Koch won the 1905 Nobel Prize in Physiology or Medicine for his investigations and discoveries in relation to tuberculosis.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 1905,
+      "doc_type": "metadata"
+    }
+  },
+
+  {
+    "id": "case_028",
+    "question": "How did Albert Claude, Christian de Duve, and George E. Palade contribute to the creation of modern cell biology?",
+    "ground_truth": "Albert Claude, Christian de Duve, and George E. Palade were awarded the 1974 Nobel Prize for their discoveries concerning the structural and functional organization of the cell. Albert Claude had a dominating role in applying the electron microscope for studying animal cells and developing differential centrifugation during the 1930s-40s at the Rockefeller Institute. He published the first electron microscopic pictures of cells offering new biological information around 1945. George Palade added important methodological improvements to both techniques and combined them to obtain biologically basic information. He discovered and described ribosomes covering the outside of the endoplasmic reticulum membranes and showed they carry out protein synthesis in the cell. In a series of elegant papers, he and coworkers demonstrated how secretory proteins enter the endoplasmic reticulum, migrate to the Golgi complex, and are processed for secretion. Christian de Duve, approaching as a biochemist, discovered that certain enzymes sedimented with a special class of particles — a fifth fraction — that he named lysosomes, membrane-limited particles containing aggressive enzymes that could degrade cellular material. He also discovered peroxisomes. Their accomplishments were largely responsible for the creation of modern Cell Biology, transforming what was a cell with components of disputed reality into a system of great organizational sophistication.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 1974,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_029",
+    "question": "Which country has produced the most Nobel laureates in Physiology or Medicine?",
+    "ground_truth": "The United States of America (USA) has produced the most Nobel laureates in Physiology or Medicine, with a large number of laureates across multiple decades spanning from the mid-20th century onward.",
+    "category": "summary",
+    "expected_metadata": {
+      "doc_type": "metadata"
+    }
+  },
+
+  {
+    "id": "case_030",
+    "question": "What is the current stock price of Pfizer?",
+    "ground_truth": "Sorry, I can't answer your question. I am custom-tuned to only answer questions within the scope of this medical archive.",
+    "category": "out_of_scope"
+  },
+
+  {
+    "id": "case_031",
+    "question": "What did Tu Youyou discover about treating Malaria, and how did she arrive at that discovery?",
+    "ground_truth": "Tu Youyou discovered Artemisinin, a drug that has significantly reduced mortality rates for patients suffering from Malaria. By the late 1960s, efforts to eradicate Malaria had failed and the disease was on the rise, with traditional treatments like chloroquine and quinine declining in effectiveness. Tu Youyou turned to traditional herbal medicine and conducted a large-scale screen of herbal remedies in Malaria-infected animals, from which an extract from the plant Artemisia annua emerged as an interesting candidate. However, results were inconsistent, so Tu revisited the ancient literature and discovered clues that guided her to successfully extract the active component. She was the first to show that this component, later called Artemisinin, was highly effective against the Malaria parasite in both infected animals and humans. Artemisinin represents a new class of antimalarial agents that rapidly kill the Malaria parasites at an early stage of their development, explaining its unprecedented potency. When used in combination therapy, it reduces mortality from Malaria by more than 20% overall and by more than 30% in children — for Africa alone, this means more than 100,000 lives saved each year. She shared the 2015 Nobel Prize.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 2015,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_032",
+    "question": "Who discovered the mechanism of neurotransmitter release, and what were the key findings about the transmission at nerve terminals?",
+    "ground_truth": "Bernard Katz, Ulf von Euler, and Julius Axelrod were jointly awarded the 1970 Nobel Prize for their discoveries concerning the humoral transmitters in the nerve terminals and the mechanism for their storage, release and inactivation. Sir Bernard Katz made fundamental discoveries concerning the mechanism for the release of the transmitter acetylcholine from nerve terminals at the nerve-muscle junction under the influence of nerve impulses. Professor Ulf von Euler discovered that the substance noradrenaline serves as neurotransmitter at the nerve terminals of the sympathetic nervous system and showed how it is stored in small nerve granules within the nerve fibres. Dr. Julius Axelrod discovered mechanisms that regulate the formation of noradrenaline in nerve cells and mechanisms involved in its inactivation, partly under the influence of an enzyme he himself discovered. Their discoveries provided basic information about how messages are mediated between nerve cells, greatly stimulating the search for remedies against nervous and mental disturbances.",
+    "category": "medical_reasoning",
+    "expected_metadata": {
+      "award_year": 1970,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_033",
+    "question": "What did Victor Ambros and Gary Ruvkun discover in 2024's Nobel Prize?",
+    "ground_truth": "Victor Ambros and Gary Ruvkun were awarded the 2024 Nobel Prize in Physiology or Medicine for the discovery of microRNA and its role in post-transcriptional gene regulation.",
+    "category": "direct_fact",
+    "expected_metadata": {
+      "award_year": 2024,
+      "doc_type": "press_release"
+    }
+  },
+
+  {
+    "id": "case_034",
+    "question": "What recipe did the 2025 Nobel laureates find and who was the recipe's author?",
+    "ground_truth": "Sorry, I can't answer your question. I am custom-tuned to only answer questions within the scope of this medical archive.",
+    "category": "out_of_scope"
+  }
+]
