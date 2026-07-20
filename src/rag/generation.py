@@ -1,8 +1,12 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.runnables import RunnablePassthrough
+from langchain_core.runnables import RunnablePassthrough, RunnableParallel
 from langchain_core.output_parsers import StrOutputParser
 import os
+
+def format_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
+
 
 def generate_answer(retriever, question: str):
     
@@ -46,14 +50,26 @@ def generate_answer(retriever, question: str):
         api_key = api_key
     )
 
-    rag_chain = (
-        {'context': retriever, 'question': RunnablePassthrough()}
+    answer_chain = (
+        RunnablePassthrough.assign(context= lambda x: format_docs(x['context']))
         | prompt
         | llm
         | StrOutputParser()
     )
-    answer = rag_chain.invoke({"question": question})
-    return answer
+
+    rag_chain = (
+        RunnableParallel(
+            {'context': retriever, 'question': RunnablePassthrough()}
+        ).assign(answer = answer_chain)
+    )
+
+    result = rag_chain.invoke(question)
+
+    return {
+        "question": question,
+        "answer": result["answer"],
+        "contexts": format_docs(result['context']),
+    }
 
 
 

@@ -5,6 +5,14 @@ import os
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+def build_metadata_header(meta: dict) -> str:
+    return (
+        f"[Laureate: {meta.get('laureate_name', 'Unknown')} | "
+        f"Award Year: {meta.get('award_year', 'Unknown')} | "
+        f"Country: {meta.get('laureate_country', 'Unknown')} | "
+        f"Motivation: {meta.get('motivation', 'Unknown')}]\n\n"
+    )
+
 
 def load_documents():
 
@@ -22,9 +30,11 @@ def load_documents():
         
         for page in doc:
             full_text += page.get_text("text") + "\n"
+
+        header = build_metadata_header(metadata_lookup.get(id, {})) 
         
         lecture_doc = Document(
-            page_content=full_text,
+            page_content= header + full_text,
             metadata={
                 "id": id,
                 "laureate_name": metadata_lookup.get(id, {}).get("laureate_name", "Unknown"),
@@ -38,7 +48,7 @@ def load_documents():
         )
 
         press_release_doc = Document(
-            page_content=metadata_lookup.get(id, {}).get("press_release", "No press release available"),
+            page_content= header + metadata_lookup.get(id, {}).get("press_release", "No press release available"),
             metadata={
                 "id":id,
                 "laureate_name": metadata_lookup.get(id, {}).get("laureate_name", "Unknown"),

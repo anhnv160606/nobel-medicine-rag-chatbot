@@ -8,7 +8,7 @@ def loading_vector_database(documents: list[Document], model_name: str = "BAAI/b
     embedding_wrapper = HuggingFaceEmbeddings(
         model_name = model_name,
         model_kwargs = {"device": "cpu"},
-        encode_kwargs = {"normalize_embeddings": True, 'batch_size': 32}
+        encode_kwargs = {"normalize_embeddings": True, 'batch_size': 32},
     )
 
     db = FAISS.from_documents(documents, embedding_wrapper, distance_strategy=DistanceStrategy.COSINE)

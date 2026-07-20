@@ -8,8 +8,9 @@ from src.rag.__init__ import (
 
 documents = load_documents()
 chunks = text_splitter(documents, chunk_size=1000, overlap=200)
+print('start embedding')
 db = loading_vector_database(chunks)
-retriever = retriever_from_vector_database(db, k=3, score_threshold=0.2)
-answer = generate_answer(retriever, "Who won the Nobel Prize in Medicine in 2023?")
-print(answer)
-
+print('load vector database success')
+db_path = 'faiss_index_local'
+db.save_local(db_path)
+print('save file success')
